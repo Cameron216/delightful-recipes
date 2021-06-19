@@ -1,0 +1,20 @@
+{
+    "name": "api",
+    "version": "1.0.0",
+    "description": "delightful recipes express api project",
+    "main": "server.js",
+    "scripts": {
+        "dev": "nodemon ./server.js localhost 3080"
+    },
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Cameron216/delightful-recipes"
+    },
+    "dependencies": {
+        "express": "^4.17.1"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.7"
+    }
+}
