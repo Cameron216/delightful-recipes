@@ -11,12 +11,17 @@
         "@testing-library/jest-dom": "^5.14.1",
         "@testing-library/react": "^11.2.7",
         "@testing-library/user-event": "^12.8.3",
+        "axios": "^0.21.1",
         "react": "^17.0.2",
         "react-dom": "^17.0.2",
         "react-scripts": "4.0.3",
         "web-vitals": "^1.1.2"
     },
     "scripts": {
+        "setup": "yarn && cd api && yarn",
+        "server": "cd api && yarn dev",
+        "client": "yarn start",
+        "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\"",
         "start": "react-scripts start",
         "build": "react-scripts build",
         "test": "react-scripts test",
@@ -41,8 +46,10 @@
         ]
     },
     "devDependencies": {
+        "concurrently": "^6.2.0",
         "eslint": "^7.29.0",
         "eslint-config-prettier": "^8.3.0",
         "prettier": "^2.3.1"
-    }
+    },
+    "proxy": "http://localhost:3080"
 }
