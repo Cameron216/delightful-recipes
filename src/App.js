@@ -15,7 +15,7 @@ const App = () => {
 
     return (
         <div>
-            <h1>Delightful recipes</h1>
+            <h1>Delightful recipes - test</h1>
             <p>{data}</p>
         </div>
     )
